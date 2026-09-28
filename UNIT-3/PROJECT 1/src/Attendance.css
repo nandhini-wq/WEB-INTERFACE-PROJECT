@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f2f6ff;
+}
+
+.attendance-container {
+  width: 90%;
+  margin: 40px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #243b64;
+  margin-bottom: 25px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  background: #243b64;
+  color: white;
+  padding: 15px;
+  font-size: 16px;
+}
+
+td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+  background: #f5f8ff;
+}
+
+button {
+  padding: 8px 15px;
+  margin: 3px;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.present-btn {
+  background: #28a745;
+}
+
+.present-btn:hover {
+  background: #218838;
+}
+
+.absent-btn {
+  background: #dc3545;
+}
+
+.absent-btn:hover {
+  background: #c82333;
+}
+
+.present {
+  color: #28a745;
+  font-weight: bold;
+}
+
+.absent {
+  color: #dc3545;
+  font-weight: bold;
+}
+
+/* Mobile View */
+
+@media (max-width: 700px) {
+  .attendance-container {
+    width: 95%;
+    padding: 15px;
+    overflow-x: auto;
+  }
+
+  table {
+    min-width: 600px;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+}
